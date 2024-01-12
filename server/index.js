@@ -29,5 +29,4 @@ var dbConfig = moongose.connect(dburl).then(()=>{
 })
 
 app.use(express.json({extended:true}));
-
 app.use("/user",userrouter);
